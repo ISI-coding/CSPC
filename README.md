@@ -32,3 +32,17 @@ although the measured points have small imbalance
 
 The snakemake pipeline automatically rebuilds figure.png from the csv data whenever the input changes 
 and skips rebuilding when the files are already up to date 
+
+
+## PW2 - Lab A: 
+
+**Mean acceleration:** -8.58 m/s^2
+**Acceleration standard deviation:** 28.72 m/s^2
+
+**Noise observation:**
+The acceleration is much noisier than the position because differentiating noisy measurements
+increases the noise, and taking two derivatives makes the effect even stronger
+
+**Integration result:**
+Integrating the noisy acceleration recovered the original position within 0.785 m
+showing that integration suppresses measurement noise 
