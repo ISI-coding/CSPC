@@ -23,3 +23,12 @@ speed-up:11135.39x faster
 
 **Conclusion:**
 Using Git and Github made the project easy to share and reproducible. NumPy implementation was much faster than Python loop, tests verified that the simulation behaved correctly.
+
+
+## PW1 - Lab B: Radioactive decay
+Observed radioactive decay data was compared with the analytical exponential decay law
+The observed data followed the same overall exponential decay trend as the analytical curve, 
+although the measured points have small imbalance
+
+The snakemake pipeline automatically rebuilds figure.png from the csv data whenever the input changes 
+and skips rebuilding when the files are already up to date 
