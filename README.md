@@ -46,3 +46,12 @@ increases the noise, and taking two derivatives makes the effect even stronger
 **Integration result:**
 Integrating the noisy acceleration recovered the original position within 0.785 m
 showing that integration suppresses measurement noise 
+
+**Bonus:**
+In bonus part we read data from trajectory.csv with np.loadtxt as in main part of lab
+Computed the velocity components vx and vy using np.gradient
+Calculated the speed using given formula
+Created a figure with two subplots:
+    -The trajectory(x and y)
+    -The speed as a function of time 
+By using plt.axis("equal") the trajectory keeps its correct shape
