@@ -55,3 +55,34 @@ Created a figure with two subplots:
     -The trajectory(x and y)
     -The speed as a function of time 
 By using plt.axis("equal") the trajectory keeps its correct shape
+
+
+## PW2 - Lab B:
+
+**Part 2 - Three routes to a minimum**
+
+For (f(x) = (x-3)^2 + 1), all three methods converged to x = 3(approximately)
+For(g(x) = x^4-3x^2 + x + 5), the result depended on the starting point. From(x0 = 0), gradient descent and SLSQP reached a local minimum, while Newton's method reached another stationary point. From(x0 = 2), the methods reached the other local minimum. A smaller learning rate made gradient descent slower.
+
+**Part 3 - Reaction rate**
+
+The measured concentration data were fitted with the first-order model
+
+C(t) = C0e^{-kt}
+
+SLSQP gave a fitted rate constant of approximately (k = 0.25). The fitted curve follows the measured data reasonably well.
+
+**Part 4 - Chemical equilibrium**
+For
+H2 + I2 -> 2HI
+with (K = 15.6), Newton's method and SLSQP both gave (x = 0.66(approximately))
+The equilibrium amount are approximately:
+    H2 = 0.34 mol
+    I2 = 0.34 mol
+    HI = 1.33 mol
+
+**Part 5 - Titration(bonus)**
+The maximum pH slope occured at approximately 50 ml, giving the equivalence point.
+
+**Conclusion:**
+This lab showed how different optimisation methods can be used to solve mathematical and chemistry problems. We also observed that the starting point and learning rate can affect the result
